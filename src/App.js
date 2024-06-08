@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Header from "./Components/Molecules/Header";
+import Recommend from "./Components/Molecules/Recommend";
+import CardsGroup from "./Components/Molecules/CardsGroup";
+import SignUpForm from "./Components/Molecules/SignUpForm";
+import Footer from "./Components/Molecules/Footer";
+import DownloadBtn from "./Components/Molecules/DownloadBtn";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-col justify-center items-center">
+      <Header />
+      <Recommend />
+      <CardsGroup />
+      <SignUpForm />
+      <DownloadBtn />
+      <Footer />
     </div>
   );
 }
